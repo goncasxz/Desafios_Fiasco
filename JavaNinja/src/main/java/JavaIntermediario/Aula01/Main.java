@@ -28,7 +28,23 @@ public class Main {
         sakura.setIdade(18);
         sakura.ativarCura();
 
+        /*Objeto 4*/
+        Hyuga hinata = new Hyuga();
+        hinata.setNome("Hinata Hyuga");
+        hinata.setAldeia("Aldeia da folha");
+        hinata.setIdade(18);
+        hinata.ByakuganAtivado();
 
+
+        /*Objeto 5*/
+
+        Boruto boruto = new Boruto();
+        boruto.setNome("Boruto Uzumaki");
+        boruto.setAldeia("Aldeia da folha");
+        boruto.setIdade(9);
+        boruto.AtivarJougan();
+        boruto.AtivarOKarma();
+        boruto.modoSabio();
 
     }
 }
