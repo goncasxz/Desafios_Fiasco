@@ -1,6 +1,6 @@
 package JavaIntermediario.Aula03;
 
-public class Hokages {
+public abstract class Hokages {
     String nome;
     int idade;
     boolean vivoOuNao;
