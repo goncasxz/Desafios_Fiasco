@@ -17,7 +17,6 @@ public class ContaPoupanca extends ContaBancaria {
         double deposito;
         deposito = valor - ((5.0 / 100) * valor);
         saldo+= deposito;
-        System.out.println(deposito);
         System.out.println("Deposito realizado com sucesso, valor depositado: " + valor);
     }
 }
