@@ -1,6 +1,6 @@
 package JavaIntermediario.Aula02;
 
-public class Uchiha extends Ninja {
+public class Uchiha extends Ninja implements SharinganInterface{
 
     public Uchiha() {
         super();
@@ -14,14 +14,23 @@ public class Uchiha extends Ninja {
         super(nome, aldeia, idade, numeroDeMissoes, rank);
     }
 
+    /*
+    * Metodo:
+    * Implementa da interface Sharingan
+    * */
+    @Override
+    public void sharinganAtivda() {
+        System.out.println(nome + ": Ativou sharingan");
+    }
+
     @Override
     public void habilidadeEspecial() {
-        System.out.println("Meu nome é " + this.nome + " e esse é meu ataque uchiha, fogoooooo");
+        System.out.println("Meu nome é " + this.nome + " e esse é meu ataque uchiha, de fogo");
     }
 
     @Override
     public void inteligenciaDeCombate() {
-        System.out.println(nome + "Inteligencia de combate");
+        System.out.println(nome + " Inteligencia de combate");
     }
 
     @Override

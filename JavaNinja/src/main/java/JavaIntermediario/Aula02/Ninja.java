@@ -11,8 +11,6 @@ public abstract class Ninja implements EstrategiaBatalha {
     int numeroDeMissoes;
     NivelNinja rank;
 
-
-
     public Ninja() {
     }
 
@@ -60,6 +58,11 @@ public abstract class Ninja implements EstrategiaBatalha {
     //MEOTODO SEM OVERRID
     public void metodoProvisorio(){
         System.out.println("TESTE");
+    }
+
+    //TODO NINJA VAI FAZER NAO PODENDO SOBRESCREVER
+    final void tacarKunai() {
+        System.out.println("EU SOU UM METODO DA CLASSE MAE");
     }
 
     @Override

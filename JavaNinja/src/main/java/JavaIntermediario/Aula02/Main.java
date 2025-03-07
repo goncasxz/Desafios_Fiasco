@@ -3,28 +3,34 @@ package JavaIntermediario.Aula02;
 public class Main {
     public static void main(String[] args) {
 
-        Uzumaki naruto = new Uzumaki();
-        naruto.nome = "Naruto Uzumaki";
-        naruto.aldeia = "Aldeia da folha";
-        naruto.idade = 16;
+        System.out.println("----------------NARUTO----------------");
+
+        Uzumaki naruto = new Uzumaki("Naruto Uzumaki", "Aldeia da Folha", 16, 30, NivelNinja.CHUUNIN, Biju.KURAMA);
         naruto.habilidadeEspecial();
         naruto.estrategiaDeBatalha();
+        naruto.tacarKunai();
+        System.out.println(naruto.biju);
 
-        Uchiha sasuke = new Uchiha();
-        sasuke.nome = "Sasuke Uchiha";
-        sasuke.aldeia = "Aldeia da folha";
-        sasuke.idade = 18;
+
+        System.out.println("----------------SASUKE----------------");
+
+        Uchiha sasuke = new Uchiha("Sasuke Uchiha", "Aldeia da Folha", 18, 20, NivelNinja.GENIN);
         sasuke.habilidadeEspecial();
 
-        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27);
+        System.out.println("----------------ITACHI----------------");
+
+        Uchiha itachi = new Uchiha("Itachi Uchiha", "Aldeia da Folha", 27, 60, NivelNinja.JOUNIN);
+        itachi.habilidadeEspecial();
         itachi.metodoProvisorio();
+
+        System.out.println("\"----------------MADARA----------------\"");
 
         Uchiha madara = new Uchiha("Madara Uchiha", "Aldeira da Folha", 45, 900, NivelNinja.KAGE);
         madara.habilidadeEspecial();
         madara.estrategiaDeBatalha();
-        //Metodo comum
+
         madara.inteligenciaDeCombate();
-        //Metodo sobrescrito
+
         madara.inteligenciaDeCombate(200);
 
         System.out.println("-----------------------------------");
